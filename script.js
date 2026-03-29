@@ -220,7 +220,7 @@ if (contactForm) {
         const object = Object.fromEntries(formData);
 
         // Your Web3Forms Access Key
-        object.access_key = "0d4eb40b-ce63-4227-876c-bfc6428ddae9";
+        object.access_key = "eee3e227-0de6-4d89-951d-65e1af54ab63";
 
         const json = JSON.stringify(object);
 
