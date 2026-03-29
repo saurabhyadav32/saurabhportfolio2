@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh Yadav Resume</title>
+
+    <style>
+        :root {
+            --accent: #1f7528;
+            --accent-light: #eaf0fb;
+            --text: #1d1d1f;
+            --muted: #555;
+            --background: #eef1f5;
+        }
+
+        body {
+            font-family: "Segoe UI", "Calibri", "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.55;
+            padding-bottom: 40px;
+        }
+
+        .container {
+            width: min(850px, 92%);
+            margin: 0 auto;
+            background: #fff;
+            padding: 26px 30px;
+            box-shadow: 0 8px 30px rgba(30, 50, 90, 0.12);
+            border: 1px solid #dbe2ee;
+        }
+
+        /* Header */
+        .header {
+            color: var(--accent);
+            text-align: center;
+            padding: 6px 0 14px;
+            font-size: 34px;
+            letter-spacing: 1.2px;
+            font-weight: 700;
+            border-bottom: 2px solid var(--accent-light);
+        }
+
+        /* Top Section */
+        .top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        .photo img {
+            width: 120px;
+            height: 140px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 1px solid #cfd8e7;
+        }
+
+        .info {
+            margin-left: auto;
+            font-size: 15px;
+            color: var(--muted);
+            text-align: right;
+        }
+
+        .info p {
+            margin: 5px 0;
+        }
+
+        /* Section */
+        .section {
+            margin-top: 18px;
+        }
+
+        .section h2 {
+            background: var(--accent-light);
+            color: var(--accent);
+            padding: 7px 10px;
+            margin-bottom: 8px;
+            font-size: 15px;
+            letter-spacing: 0.4px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .section ul {
+            margin: 10px 0 0;
+            padding-left: 19px;
+        }
+
+        .section li {
+            margin-bottom: 7px;
+        }
+
+        .section p {
+            margin-top: 0;
+        }
+
+        /* Two Column */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 14px;
+        }
+
+        .half {
+            width: 50%;
+        }
+
+        @media (max-width: 760px) {
+            .container {
+                padding: 18px;
+            }
+
+            .top,
+            .row {
+                flex-direction: column;
+            }
+
+            .half {
+                width: 100%;
+            }
+        }
+
+        /* Print (PDF) */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                border: none;
+                margin: 0;
+                width: 100%;
+                padding: 0;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+        }
+
+        /* Download Action styling */
+        .download-action {
+            text-align: center;
+            padding: 20px 0;
+            background: #fff;
+            margin-bottom: 28px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .download-action button {
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(31, 117, 40, 0.3);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .download-action button:hover {
+            background: #175a1e;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(31, 117, 40, 0.4);
+        }
+
+        .download-action svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="download-action no-print">
+        <button onclick="window.print()">
+            <svg xmlns="http://www.w3.org/2000/09/svg" viewBox="0 0 24 24">
+                <path
+                    d="M13 10H18L12 16L6 10H11V3H13V10ZM4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19Z">
+                </path>
+            </svg>
+            Download CV as PDF
+        </button>
+    </div>
+
+    <div class="container">
+
+        <div class="header">SAURABH YADAV</div>
+
+        <div class="top">
+            <div class="photo">
+                <img src="images/profile.jpg" alt="Saurabh Yadav photo">
+            </div>
+
+            <div class="info">
+                <p>Bhopal, Madhya Pradesh</p>
+                <p>Phone: 7897003122</p>
+                <p>Email: saurabhyadav0335@gmail.com</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/saurabh-yadav-934930391?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" style="color:var(--text); text-decoration:none;">linkedin.com/in/saurabh-yadav-934930391</a></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>CAREER OBJECTIVE</h2>
+            <p>
+                Aspiring Data Analytics and ML Engineer with a strong foundation in Python,
+                Data Analysis, and Machine Learning. Eager to secure an internship or entry-level
+                position to apply and expand my technical skills in data-driven projects.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>TECHNICAL SKILLS</h2>
+            <ul>
+                <li><b>Web Development:</b> HTML & CSS</li>
+                <li><b>Programming Languages:</b> Python, C++</li>
+                <li><b>Core Concepts:</b> Data Analysis, Machine Learning</li>
+                <li><b>Tools:</b> Pandas, Numpy, Jupyter</li>
+                <li><b>Technology:</b> VS Code, Antigravity, Claude</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>EDUCATION</h2>
+            <ul>
+                <li><b>BCA</b>, Scope Global Skills University, Bhopal | 2025 - Present</li>
+                <li><b>Intermediate (12th)</b> 2025</li>
+                <li><b>High School (10th)</b> 2023</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>CERTIFICATIONS</h2>
+            <ul>
+                <li>HTML & CSS Certification</li>
+                <li>Python Certification</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>PROJECTS & INTERESTS</h2>
+            <ul>
+                <li><b>Student Management System</b><br>
+                    Developed a web-based student management system.<br>
+                </li>
+
+                <li><b>Counseling Website</b><br>
+                    Created a website providing career counselling and guidance.<br>
+                    Web: myeduvidhya.in
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+
+            <div class="section half">
+                <h2>KEY STRENGTHS</h2>
+                <ul>
+                    <li>Logical Thinker</li>
+                    <li>Team Player</li>
+                    <li>Problem Solver</li>
+                </ul>
+            </div>
+
+            <div class="section half">
+                <h2>LANGUAGES</h2>
+                <ul>
+                    <li>Hindi (Native)</li>
+                    <li>Hinglish</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
